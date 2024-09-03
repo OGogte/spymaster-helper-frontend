@@ -26,11 +26,9 @@ const WordCard = styled(Card)<{ cardColor: string }>(({ theme, cardColor }) => (
   backgroundColor: cardColor,
   color: cardColor === '#000000' ? '#FFFFFF' : theme.palette.getContrastText(cardColor),
   borderRadius: theme.shape.borderRadius,
-  boxShadow: theme.shadows[3],
   transition: "transform 0.3s ease",
   "&:hover": {
     transform: "scale(1.05)",
-    boxShadow: theme.shadows[6],
   },
 }));
 

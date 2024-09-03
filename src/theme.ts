@@ -9,9 +9,6 @@ const theme = createTheme({
       main: "#ff4081",
     },
     // You can add a custom color palette like this
-    custom: {
-      black: "#000000",
-    },
   },
   shape: {
     borderRadius: 8,
