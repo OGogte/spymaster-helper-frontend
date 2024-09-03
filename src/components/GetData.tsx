@@ -12,11 +12,12 @@ const GetData: React.FC = () => {
       try {
         const decodedData = JSON.parse(decodeURIComponent(dataParam));
 
-        // Store the data or process it as needed
+        // Store the data in localStorage
         localStorage.setItem("hintData", JSON.stringify(decodedData));
         console.log("Data stored:", decodedData);
-        // Redirect the user to the homepage
-        navigate("/");
+
+        // Redirect the user to the grid component, passing the data
+        navigate("/game");
       } catch (error) {
         console.error("Failed to decode or parse data:", error);
       }
